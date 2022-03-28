@@ -1,6 +1,8 @@
 import random
 
 choices = ["r", "p", "s"]
+player_score = 0
+opp_score = 0
 
 def play():
     player = None
@@ -37,8 +39,12 @@ if __name__ == "__main__":
                 print("Tie!")
             case 2:
                 print("Win!")
+                player_score += 1
             case 3:
                 print("Lose!")
+                opp_score += 1
+        
+        print(f"Score (player/opponent): {player_score}/{opp_score}")
         
         again = None
         
