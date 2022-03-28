@@ -19,8 +19,6 @@ def binary_search(arr, num, low=None, high=None):
         # num > arr[mid]
         return binary_search(arr, num, mid + 1, high)
 
-def main():
+if __name__ == "__main__":
     arr = [1, 3, 5, 9, 14, 22, 36]
     print(binary_search(arr, 14))
-
-main()

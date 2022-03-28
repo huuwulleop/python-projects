@@ -26,7 +26,7 @@ def is_win(player, opp):
             or (player == "s" and opp == "p"):
         return True
 
-def main():
+if __name__ == "__main__":
     play_again = ["y", "n"]
     
     while True:
@@ -47,7 +47,5 @@ def main():
         
         if again == "n":
             break
-
-main()
 
     
